@@ -439,12 +439,12 @@ W pierwszej kolejności dodaj wpis dla ``/contact`` do pliku konfiguracji trasow
 
         # app/config/routing.yml
         contact:
-            path:     /contact
+            pattern:  /contact
             defaults: { _controller: AcmeDemoBundle:Main:contact }
 
     .. code-block:: xml
 
-        <route id="contact" path="/contact">
+        <route id="contact" pattern="/contact">
             <default key="_controller">AcmeBlogBundle:Main:contact</default>
         </route>
 
