@@ -441,7 +441,7 @@ zawartością:
 
     {
         "require": {
-            "symfony/symfony": "2.2.*"
+            "symfony/symfony": "2.1.*"
         },
         "autoload": {
             "files": ["model.php","controllers.php"]
@@ -650,11 +650,11 @@ trasowania:
 
     # app/config/routing.yml
     blog_list:
-        path:     /blog
+        pattern:  /blog
         defaults: { _controller: AcmeBlogBundle:Blog:list }
 
     blog_show:
-        path:     /blog/show/{id}
+        pattern:  /blog/show/{id}
         defaults: { _controller: AcmeBlogBundle:Blog:show }
 
 Teraz Symfony2 obsługuje wszystkie prozaiczne zadania, kontroler wejścia jest
